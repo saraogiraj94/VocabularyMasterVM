@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_purple"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="      Share A Word With Us      "
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textStyle="italic"
+        android:textSize="21sp" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@android:color/holo_blue_bright">
+        <EditText
+            android:textColor="@android:color/black"
+            android:backgroundTint="@android:color/white"
+            android:layout_width="match_parent"
+            android:id="@+id/word"
+            android:layout_height="match_parent"
+            android:paddingLeft="20dp"
+            android:hint="Word"/>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <EditText
+            android:textColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@android:color/white"
+            android:id="@+id/name"
+            android:paddingLeft="20dp"
+            android:hint="Your Name"/>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="20dp"
+            android:id="@+id/email"
+            android:textColor="@android:color/black"
+            android:backgroundTint="@android:color/white"
+            android:hint="Your Email"/>
+    </android.support.v7.widget.CardView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textColor="@android:color/black"
+        android:typeface="serif"
+        android:textStyle="bold"
+        android:id="@+id/sharebutton"
+        android:background="@android:color/holo_purple"
+        android:text="Share" />
+</LinearLayout>

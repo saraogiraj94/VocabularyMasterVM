@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="raj.saraogi.vocabularymastervm.SlidePageFragment">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="252dp"
+        android:id="@+id/c">   <!-- TODO: Update blank fragment layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:id="@+id/main"
+                android:layout_weight=".3"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Hello WorlD "
+                android:gravity="center"
+                android:id="@+id/word_name"
+                android:textColor="@android:color/black"
+                android:background="@android:color/holo_purple"
+                android:layout_weight="0.7"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

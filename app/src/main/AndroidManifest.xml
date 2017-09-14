@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="raj.saraogi.vocabularymastervm">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/biglogo"
+        android:label="Vocabulary Master VM"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Main2Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".NameList"
+            android:label="Ocean Of Words"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".StaredWordList"
+            android:label="Your Star Words"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".StarWordDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HomeScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SplashScreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MyDictionary.AddWord"
+            android:label="Add Word to Diary"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyDictionary.MyDList"
+            android:label="Personal Diary"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyDictionary.MyDWordDetail"
+            android:label="Diary Word"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyDictionary.EditWord"
+            android:label="Edit The word"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".About.AboutUS"
+            android:label="About Us"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HallofFame"
+            android:label="Hall Of Fame"
+            android:screenOrientation="portrait" />
+        <activity android:name=".About.AboutApp"></activity>
+
+        <service android:name=".TokenService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".FireBaseMsg">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">VocabularyMasterVM</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="page_content">
+      <item>In this Android tip, I am going to show you how to make screen slideshow.
+        First, modify the activity_main.xml file to add a ViewPager widget.
+      </item>
+      <item>
+        Second, create a Fragment called SlidePageFragment and its layout file called frlayout.xml.
+      </item>
+      <item>
+        Third, Creates a class called PagerAdapter that extends the FragmentStatePagerAdapter abstract class and implements the getItem() method to supply instances of SlidePageFragment as new pages and the getCount() method which returns the number of pages the adapter will create.
+      </item>
+
+    </string-array>
+    <string name="banner_ad_unit_id">ca-app-pub-5093664666925857/1575791124</string>
+</resources>

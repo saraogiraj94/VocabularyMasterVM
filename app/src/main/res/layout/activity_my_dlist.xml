@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#D7CCC8"
+    android:orientation="vertical"
+    tools:context="raj.saraogi.vocabularymastervm.NameList">
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_alignParentTop="true"
+            android:id="@+id/app1"
+            android:layout_height="55dp">
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#795548"
+                app:titleTextColor="@android:color/white"
+                android:id="@+id/toolbar4">
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.AppBarLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/app1"
+        android:id="@+id/recycler_view4"
+        android:background="#D7CCC8"
+        android:layout_above="@+id/addnewButton"
+        android:paddingTop="6dp">
+    </android.support.v7.widget.RecyclerView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/addnewButton"
+        android:layout_alignParentBottom="true"
+        android:background="#795548"
+        android:text="+"
+        android:onClick="add"
+        android:textSize="25sp"
+        android:textColor="#D7CCC8"
+        android:layout_margin="4dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="raj.saraogi.vocabularymastervm.HomeScreen">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:id="@+id/l1"
+        android:background="@android:color/holo_orange_dark"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/shareAWord"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:background="#FF9E80"
+            android:onClick="share"
+            android:text="SHARE\nA\nWORD"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <Button
+            android:id="@+id/oceanOfWords"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:background="#A5D6A7"
+            android:onClick="call1"
+            android:text="ENTER THE OCEAN\n\tOF WORDS"
+            android:textAllCaps="true"
+            android:textScaleX="1.2"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_below="@+id/l1"
+        android:id="@+id/l2"
+        android:orientation="vertical">
+
+        <android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/pager3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        android:layout_below="@+id/l2"
+        android:id="@+id/l3"
+        android:background="@android:color/holo_purple"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.333"
+            android:background="#B3E5FC"
+            android:text="Hall\nOf\nFame"
+            android:onClick="addmyd"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.333"
+            android:background="#26C6DA"
+            android:text="PERSONAL\nDIARY"
+            android:textStyle="bold"
+            android:onClick="myd"
+            android:typeface="serif" />
+
+        <Button
+            android:id="@+id/yourStarWords"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.359"
+            android:alpha=".99"
+            android:background="#FFD54F"
+            android:onClick="call2"
+            android:text="YOUR\nSTAR\nWORDS"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/l3"
+        android:id="@+id/l4"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:background="#B0BEC5"
+            android:text="ABOUT THE APP"
+            android:textStyle="bold"
+            android:onClick="aboutapp"
+            android:typeface="serif" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.7"
+            android:background="@android:color/holo_red_dark"
+            android:text="ABOUT US"
+            android:id="@+id/abus"
+            android:onClick="aboutus"
+            android:textStyle="bold"
+            android:typeface="serif" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "533276809317",
+    "firebase_url": "https://vocbularymastervm.firebaseio.com",
+    "project_id": "vocbularymastervm",
+    "storage_bucket": "vocbularymastervm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:533276809317:android:4ff80fce31176dfe",
+        "android_client_info": {
+          "package_name": "raj.saraogi.vocabularymastervm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "533276809317-um7a62eltg8rpls3ns37u9salchtfk68.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "raj.saraogi.vocabularymastervm",
+            "certificate_hash": "F31CE84D7AD0A2A84AB0D0CC43B1A0AAEC98C946"
+          }
+        },
+        {
+          "client_id": "533276809317-tuulasofmf7gi31s7dgnrdllorts39rv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAE4bVKYYN2j5GYKrpDucgzzPGB0u0qw1o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "533276809317-tuulasofmf7gi31s7dgnrdllorts39rv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
